@@ -1,0 +1,117 @@
+h1 {
+    background-color: aqua;
+    color: blue;
+}
+
+article {
+    border:solid 3px goldenrod;
+}
+
+.logo {
+    
+    width: 22%;
+    border: solid 1px blue;
+    margin: 0%;
+    padding: 0%;
+   
+ 
+}
+.logosContact a {
+     margin: 0%;
+    padding: 0%;
+    
+}
+
+.logosContact {
+    border: solid red 1px;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+.logosContact div {
+    text-align: center;
+}
+
+.graph {
+    width: 40vw;
+   height: 40vh;
+   border: solid orange 1px;
+   background: grey;
+   display: flex;
+   align-items: flex-end;
+   border-radius: 2%;
+
+}
+
+.bar {
+    flex-grow: 1;
+    border: solid 2% rgb(214, 13, 13);
+    background-color: aqua;
+    margin: 1%;
+
+}
+
+.bar p{
+text-align: center;
+font-size: 90%;
+}
+
+.bar1 {
+    height: 95%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.bar2 {
+    height: 89%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.bar3 {
+    height: 58%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+
+}
+
+.bar4{
+    height: 69%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.bar5 {
+    height: 59%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.bar6 {
+    height: 9%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.bar7 {
+    height: 64%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.bar8 {
+    height: 64%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+ul {
+
+    margin: 0%;
+    padding: 0%;
+    border: solid 2px red;
+    list-style-type: none;
+}

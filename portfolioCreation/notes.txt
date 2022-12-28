@@ -1,0 +1,11 @@
+dans 'projets' tu mets une ancre pour les images qui seront en dessous (elles représenteront les porjets, et on peux cliquer dessus)
+dans 'compétences' ce sera une autre page ou overlay qui affiche en barre de progression html, css, js... et autres compétences textes
+dans  'contacts' yaura linkedin, github, mail, et peut etre t ajoute un cv carement au moins c est fait mais bon ca correspont pas trop
+
+
+pour 'compétences'
+tu vas mettre tout le contenu de la page en flex column, puis chaque contenants en row pour les disposer chacun leur tour vers
+la droite et/ou gauche.      ""OU""  go grid pour la colonne et les lignes
+
+Pour le telephone, tu fait un @media pour le flex, et center pour aligner tout les contenants du contenu en mid 
+
