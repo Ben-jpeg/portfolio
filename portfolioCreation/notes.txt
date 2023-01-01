@@ -9,3 +9,5 @@ la droite et/ou gauche.      ""OU""  go grid pour la colonne et les lignes
 
 Pour le telephone, tu fait un @media pour le flex, et center pour aligner tout les contenants du contenu en mid 
 
+ajouter un menu burger pour le @media en format telephone
+
