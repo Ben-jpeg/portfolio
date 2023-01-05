@@ -21,11 +21,11 @@ ul {
 
 
 /* header */
-.logo {
-    width: 22%;
+.logoHeader {
+    width: 8%;
     border: solid 1px blue;
     margin: 0%;
-    padding: 0%;
+    padding: 2%;
 }
 
 h1 {
@@ -71,6 +71,14 @@ article {
 
 
 /*----- page Contacts -----*/
+
+.logo {
+    width: 22%;
+    border: solid 1px blue;
+    margin: 0%;
+    padding: 0%;
+}
+
 .logosContact a {
      margin: 0%;
     padding: 0%; 
@@ -306,7 +314,7 @@ article p {
   }
   
 
-  /* ---------- Medi@ Queries ---------- */
+/* ---------- Medi@ Queries ---------- */
   
   @media only screen and (max-width: 800px) {
     body {
@@ -322,13 +330,20 @@ article p {
         display: none;
     }
 
-    /* index */
+    .logoHeader {
+        width: 20%;
+        border: solid 1px blue;
+        margin: 0%;
+        padding: 2%;
+    }
+
+/* index */
 
     .divArticle {
         flex-wrap: wrap;
     }
 
-    /*  competences */
+/*  competences */
 .graph {
     width: 63vw;
    height: 44v
@@ -339,10 +354,20 @@ article p {
     width: 30%;
 }
 
-  /*  contacts */
+/*  contacts */
 
 .logosContact {
    flex-wrap: wrap;
 }
 
+  }
+
+  /* ---------- Hover ---------- */
+
+  .navColor:hover {
+    color: yellow;
+  }
+
+  .divArticle article a img:hover {
+    border: solid 2px orange;
   }
