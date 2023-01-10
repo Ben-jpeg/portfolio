@@ -52,15 +52,21 @@ article {
 
 /*----- page Index (accueil) -----*/
 
+.presentation {
+    text-align: center;
+    margin-top: 10%;
+}
+
 .illustrationProjets {
-    width: 65%;
+    width: 64%;
     border-radius: 2%;
     border: solid 1px grey;
 }
 
 .divArticle {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
     margin-top: 7%;
 }
 
@@ -363,7 +369,6 @@ article p {
   }
 
   /* ---------- Hover ---------- */
-
   .navColor:hover {
     color: yellow;
   }
@@ -371,3 +376,6 @@ article p {
   .divArticle article a img:hover {
     border: solid 2px orange;
   }
+
+
+
