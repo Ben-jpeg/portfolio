@@ -377,6 +377,7 @@ article p {
     border: solid 2px orange;
   }
 
+  
   .logo:hover {
     border: solid 1px yellow;
     border-radius: 11%;
