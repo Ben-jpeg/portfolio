@@ -5,9 +5,9 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* background-image: url("../img/fond1.jpg"); */
-    background-size: cover;
-    background-color: rgb(209, 122, 122);
+    background-image: url("../img/fond1.jpg"); 
+    background-size: auto;
+    /* background-color: rgb(255, 255, 255); */
 } 
 
 ul {
@@ -22,7 +22,7 @@ ul {
 
 /* header */
 .logoHeader {
-    width: 8%;
+    width: 6%;
     border: solid 1px blue;
     margin: 0%;
     padding: 2%;
@@ -48,6 +48,19 @@ h1 {
 
 article {
     border:solid 3px goldenrod;
+}
+
+/* footer */
+footer {
+    display: flex;
+    margin: 3%;
+}
+
+.hdp {
+
+    padding: 1%;
+    margin:0%;
+    width: 8%;
 }
 
 /*----- page Index (accueil) -----*/
@@ -79,7 +92,7 @@ article {
 /*----- page Contacts -----*/
 
 .logo {
-    width: 22%;
+    width: 17%;
     border: solid 1px blue;
     margin: 0%;
     padding: 0%;
