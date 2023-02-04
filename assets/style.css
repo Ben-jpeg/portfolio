@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
 
-/*----- General -----*/
-body {
+/*---------- General ----------*/
+ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-image: url("../img/fond1.jpg"); 
-    background-size: auto;
+    /* background-color: white; */
+    color: black;
+    font-size: 25px;
+    background-image: url("../img/fond1.jpg");  
+    transition: 300ms ease-in-o;
+    /* background-size: auto; */
     /* background-color: rgb(255, 255, 255); */
-} 
+}  
 
 ul {
     margin: 0%;
@@ -17,7 +21,14 @@ ul {
     list-style-type: none;
 }
 
-
+/*---------- DarkMode ----------*/
+  
+  .dark-mode {
+    /* background-color: black; */
+    background-image: url("../img/fond2.jpg");
+    color: white;
+    transition: 300ms ease-in-out;
+  }
 
 
 /* header */
@@ -26,11 +37,12 @@ ul {
     border: solid 1px blue;
     margin: 0%;
     padding: 2%;
+   
 }
 
 h1 {
     background-color: aqua;
-    color: blue;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -68,12 +80,56 @@ footer {
 .presentation {
     text-align: center;
     margin-top: 10%;
+    
+}
+
+.welc {
+    font-family: 'Blinker', sans-serif;
+    font-size: 4rem;
+    animation: inherit;
+    color: linear-gradient(45deg, white 10%, black 90%);
+    animation: wheelHueColor 7s infinite;
+    
+}
+
+@keyframes wheelHueColor {
+    from, to { color: hsl(324, 70%, 45%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+  }
+
+.welcSt {
+    font-family: 'Blinker', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin: 3%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.col {
+    margin: 1%;
+    background-color: rgba(0, 255, 0, 0.1);
+    border-top-right-radius: 4%;
+    border-top-left-radius:  4% ;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    border-right: 4%;
+    border-left: 4%;
+}
+
+.logoComp {
+    width: 45%;
 }
 
 .illustrationProjets {
     width: 64%;
     border-radius: 2%;
     border: solid 1px grey;
+    color: white;
 }
 
 .divArticle {
@@ -316,8 +372,6 @@ article p {
 
 /*  VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV  */
 /*  VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV  */
-/*  VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV  */
-/*  VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV  */
 
 /* Menu burger de nav */
 .sidenav {
@@ -409,6 +463,13 @@ article p {
         flex-wrap: wrap;
     }
 
+    .welcSt {
+        
+        font-size: 20px;
+        margin-right: 11%;
+        margin-left: 11%;
+    }
+
 /*  competences */
 .graph {
     width: 85vw;
@@ -465,6 +526,10 @@ article p {
     border: solid 1px yellow;
     border-radius: 11%;
   }
+
+  .col:hover {
+    background-color: rgba(0, 255, 0, 0.3);
+}
   
 
  

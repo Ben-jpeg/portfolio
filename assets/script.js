@@ -1,3 +1,5 @@
+/* Menu Burger _____________*/ 
+
 var sidenav = document.getElementById("mySidenav");
 var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
@@ -11,16 +13,15 @@ function openNav() {
 }
 
 
-
-
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   sidenav.classList.remove("active");
 }
 
+/* Fin _____________*/ 
 
 
-/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX TEST XXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/*  XXXXXXXXXXXXXXXXXXXXX TEST Graph XXXXXXXXXXXXXXXXXXXXXX  */
 
 function makeGraph(container, labels)
 {
@@ -49,3 +50,13 @@ function makeGraph(container, labels)
 }
 
 window.onload=function () { makeGraph("graph", "labels") }
+
+/*  XXXXXXXXXXXXXXXXXXXXX Fin graph XXXXXXXXXXXXXXXXXXXXXX  */
+
+
+
+// Dark Mode _____________________________________________X
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

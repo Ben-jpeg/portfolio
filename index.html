@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
-    <title>CV BAROINI Bendjade - Developpeur Web</title>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+<title>CV BAROINI Bendjade - Developpeur Web</title>
 </head>
 
 
@@ -19,8 +22,10 @@
      <!-- header-->
    <header id="hdp">
        <a href="index.html"> <img class="logoHeader" src="img/logo1.png" alt="logo du site"> </a>
+       <button onclick="myFunction()">DarkMode</button>
        
 
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <section class="headerMenuBurger">
   <div id="mySidenav" class="sidenav">
@@ -40,13 +45,9 @@
       </span>
     </a>
 </section>
-
-
-
-
-
-
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
 
 <h1>Portfolio </h1>
 
@@ -62,17 +63,122 @@
    <!-- fin header-->
 
 
- <!-- section contenu-->
+ <!-- section Présentation-->
 
 
- <section class="presentation">
-    <p>Bienvenue . Je m'appelle <b>BAROINI Bendjade</b> Développeur Web & Web Mobile depuis près de 2 ans</p>
-    <p>A la fois motivé et flexible, j'ai effectué une formation, et travaillé également, me permettant d'apprendre et pratiquer mes conaissances . <br>
-    Bonne visite</p>
+    <section class="presentation">
+       <p class="welc"><b>BAROINI Bendjade</b></br> Développeur Full Stack</p>
+       <p class="welcSt">Passionné dans un premier temps par le dessin et l'informatique, j'ai pu m'essayer au développement web fin 2019 en autodidacte. Suite à cela, j'ai alors décidé d'entrepredre une formation afin d'acquérir des connaissances et valider le diplôme Développeur web et web mobile (bac +2). Motivé et flexible, j'ai fait l'expérience du milieu professionnel me permettant d'en apprendre davantage et pratiquer mes conaissances . <br>
+       Bonne visite</p>
 
- </section>
+    </section>
 
 
+ <!-- section Réseaux & contacts-->
+
+   <section>
+
+     <div class="container text-center">
+       <div class="row">
+
+       <div class="col">
+            <a href="https://www.linkedin.com/in/bendjade-baroini-0543481ba/">
+              <div class="col">
+                <img class="logo" src="img/linkedin logo.png" alt="linkedin logo"> 
+              </div>
+            </a>
+      </div>
+
+      <div class="col">
+           <a href="https://github.com/Ben-jpeg">  
+              <div class="col">
+                <img class="logo" src="img/github logo.png" alt="github logo"> 
+              </div>
+           </a>
+        </div>  
+
+        <div class="col">
+           <a href="img/cv.pdf" target="_blank">
+              <div class="col">
+                <img class="logo" src="img/cv.png" alt="cv logo"> 
+              </div>
+           </a> 
+        </div>
+   
+       </div>
+     </div>
+
+   </section>
+<hr>
+
+
+
+
+   <!-- section compétences-->
+
+      <h2> Compétences informatiques</h2>
+
+      <hr class="souligneTitre" >
+
+       <div class="container text-center">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/html.png" alt="logo html"> <p>HTML</p></div>
+            </div>
+
+            <div class="col">
+             <div class="p-3"><img class="logoComp" src="img/css.png" alt="logo css"> <p>CSS</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/js.png" alt="logo js"> <p>JavaScript</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/sql.png" alt="logo sql"> <p>SQL</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/php.png" alt="logo php"><p>PHP</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/laravel.png" alt="logo laravel"><p>Laravel</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/vuejs.png" alt="logo vuejs"><p>VueJS</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/figma.png" alt="logo figma"><p>Figma</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/bootstrap.png" alt="logo bootstrap"><p>Bootstrap</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/canva.png" alt="logo canva"><p>Canva</p></div>
+            </div>
+
+            <div class="col">
+              <div class="p-3"><img class="logoComp" src="img/vscode.png" alt="logo VSCode"><p>Visual Studio Code</p></div>
+            </div>
+
+          </div>
+
+      </div>
+
+<hr>
+
+
+ <!-- section Projets Perso-->
+
+ <h2>Mes projets</h2>
+
+ <hr class="souligneTitre" >
 
 
  <section id="projets">
@@ -121,8 +227,9 @@
        <a href="#hdp"> <img class="hdp" src="img/fleche.png" alt="haut de page"> </a> 
    </footer>
 
-
 <script type="text/javascript" src="assets/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 
 
 </body>
