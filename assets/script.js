@@ -20,7 +20,6 @@ function closeNav() {
 
 /* Fin _____________*/ 
 
-
 /*  XXXXXXXXXXXXXXXXXXXXX TEST Graph XXXXXXXXXXXXXXXXXXXXXX  */
 
 function makeGraph(container, labels)
@@ -60,3 +59,11 @@ function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+// Apparition au défilement _____________________________________________X
+
+ScrollReveal().reveal('.welc', { delay: 300 });
+ScrollReveal().reveal('.welcSt', { delay: 300 });
+ScrollReveal().reveal('.container', { delay: 300 });
+ScrollReveal().reveal('.col', { delay: 300 });
+ScrollReveal().reveal('.divArticle', { delay: 300 });
