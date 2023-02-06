@@ -21,6 +21,14 @@ ul {
     list-style-type: none;
 }
 
+.centerHr {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 70%;
+}
 
 
 /*---------- DarkMode ----------*/
@@ -125,6 +133,10 @@ footer {
 
 .logoComp {
     width: 45%;
+}
+
+.souligneTitre {
+align-self: center;
 }
 
 .illustrationProjets {
