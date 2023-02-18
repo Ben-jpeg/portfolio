@@ -26,40 +26,46 @@ ul {
     list-style-type: none;
 } 
 
+.flex {
+   display: flex;
+}
+
+.jcc {
+    justify-content: center;
+}
+
 .centerHr {
     display: flex;
     justify-content: center;
 }
 
-
 hr {
     width: 70%;
 }
-
+/*---------- xxxxxxxx ----------*/
 
 /*---------- DarkMode ----------*/
-  
   .dark-mode {
     /* background-color: black; */
     background-image: url("../img/fond2.jpg");
     color: white;
     transition: 300ms ease-in-out;
   }
+/*---------- xxxxxxx ----------*/
 
 
 /* header */
 .logoHeader {
     width: 9%;
-    border: solid 1px rgb(175, 175, 212);
     margin: 0%;
-    padding: 2%;
+    padding: 1%;
    
 }
 
 h1 {
-    background-color: aqua;
-    color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 140%;
+    
 }
 
 .headerMenu {
@@ -69,9 +75,17 @@ h1 {
 }
 
 .headerMenu a {
-    padding: 2%;
+    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
     margin: 0%;
     text-decoration: none;
+}
+
+.navColor{
+color: rgb(183, 120, 241);
+font-size: 130%;
+font-weight: 500;
 }
 
 article {
@@ -107,6 +121,8 @@ footer {
     animation: inherit;
     color: linear-gradient(45deg, white 10%, black 90%);
     animation: wheelHueColor 7s infinite;
+    padding: 0%;
+    margin: 0%;
     
 }
 
@@ -123,33 +139,56 @@ footer {
     font-family: 'Blinker', sans-serif;
     font-size: 26px;
     text-align: center;
-    margin: 3%;
     margin-right: 15%;
     margin-left: 15%;
 }
 
+.cont {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 a{
     text-decoration: none !important;
+    color: orange;
+}
+
+a div p{
+    color: orange;
+}
+
+.opquast {
+    color: orange;
 }
 
 .col {
-    margin: 1%;
-    background-color: rgba(149, 15, 211, 0.151);
+    margin:1%;
+    background-color: rgba(149, 15, 211, 0.096);
     border-top-right-radius: 4%;
     border-top-left-radius:  4% ;
     border-bottom-left-radius: 4%;
     border-bottom-right-radius: 4%;
     border-right: 4%;
-    border-left: 4%;
+    border-left: 4%;  
 }
+
 
 .box {
     transition: 0.6s ease-in-out;
-  }
-
-.logoComp {
-    width: 45%;
 }
+
+
+.logoTechnos {
+    width: 38%;
+}
+
+.logosComp {
+    
+    width: 13%;
+}
+
 
 .souligneTitre {
 align-self: center;
@@ -165,6 +204,7 @@ align-self: center;
 .divArticle {
     display: flex;
     justify-content: center;
+    display: none;
 }
 
 .divArticle article {
@@ -211,7 +251,7 @@ align-self: center;
 .titresCompetences {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .graph {
@@ -366,33 +406,40 @@ font-size: 88%;
 .articleAgile {
     display: flex;
     justify-content: left;
-    padding: 2%;
-    padding-left: 9%;
+    padding: 1%;
+    margin-left: 9%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .articleDocker {
     display: flex;
     justify-content: right;
-    padding-right: 9%;
+    padding: 1%;
+    margin-right: 9%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
 }
 
 .articleOpquast {
     display: flex;
     justify-content: left;
-    padding: 2%;
-    padding-left: 9%;
+    padding: 1%;
+    margin-left: 9%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .articleOpenoffice {
     display: flex;
     justify-content: right;
-    padding-right: 9%;
+    padding: 1%;
+    margin-right: 9%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-.logosComp {
-    height: 23%;
-    width: 18%;
-}
 
 article p {
     padding: 2%
@@ -461,7 +508,7 @@ article p {
     display: none;
   }
   
-
+/* ---------- xxxxxxxxxxxxx ---------- */
 /* ---------- Medi@ Queries ---------- */
   
   @media only screen and (max-width: 800px) {
@@ -485,9 +532,16 @@ article p {
         padding: 2%;
     }
 
+    .logo {
+        width: 29%;
+        margin: 0%;
+        padding: 0%;
+    }
+
 /* index */
 
     .divArticle {
+        display: contents;
         flex-wrap: wrap;
     }
 
@@ -496,6 +550,25 @@ article p {
         font-size: 20px;
         margin-right: 11%;
         margin-left: 11%;
+    }
+
+    .col {
+        margin:0%;
+        padding:0%;
+       
+    }
+
+
+    .test {
+        width:83%;
+    }
+
+    .projectsHidden {
+        display: none;
+    }
+
+    .titresCompetences {
+        font-size: 14px;
     }
 
 /*  competences */
@@ -528,13 +601,10 @@ article p {
 .phonegraph {
     display:contents
 }
-
-
-/* Graphs fin ----------------*/
-
-
   }
 
+
+  /* ---------- xxxxx ---------- */
   /* ---------- Hover ---------- */
   .navColor:hover {
     color: yellow;

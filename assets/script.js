@@ -20,7 +20,7 @@ function closeNav() {
 
 /* Fin _____________*/ 
 
-/*  XXXXXXXXXXXXXXXXXXXXX TEST Graph XXXXXXXXXXXXXXXXXXXXXX  */
+/* Graph XXXXXXXXXXXXXXXXXXXXXX  */
 
 function makeGraph(container, labels)
 {
