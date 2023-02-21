@@ -55,6 +55,12 @@ hr {
 
 
 /* header */
+
+/* header {
+    display: flex;
+   
+} */
+
 .logoHeader {
     width: 9%;
     margin: 0%;
@@ -80,6 +86,10 @@ h1 {
     padding-right: 4%;
     margin: 0%;
     text-decoration: none;
+}
+
+.avatar{
+    width: 14%;
 }
 
 .navColor{
@@ -111,7 +121,7 @@ footer {
 
 .presentation {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 3%;
     
 }
 

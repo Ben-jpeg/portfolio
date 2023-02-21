@@ -48,6 +48,8 @@ function makeGraph(container, labels)
     }	
 }
 
+
+
 window.onload=function () { makeGraph("graph", "labels") }
 
 /*  XXXXXXXXXXXXXXXXXXXXX Fin graph XXXXXXXXXXXXXXXXXXXXXX  */
