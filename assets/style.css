@@ -98,9 +98,16 @@ font-size: 130%;
 font-weight: 500;
 }
 
-article {
+/* article {
     border:solid 3px goldenrod;
-}
+} */
+
+/* .col article {
+    border: solid 2px orange;
+    border-top: solid 1px purple;
+    border-bottom-color:solid 1px purple;
+    border-left-color: solid 1px purple;
+} */
 
 /* footer */
 footer {
@@ -227,7 +234,7 @@ align-self: center;
 
 .logo {
     width: 17%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     margin: 0%;
     padding: 0%;
 }
@@ -238,7 +245,7 @@ align-self: center;
 }
 
 .logosContact {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -402,7 +409,7 @@ font-size: 88%;
 }
 
 .sectionCompetences {
-    border: solid 3px rgb(120, 8, 185);
+    /* border: solid 3px rgb(120, 8, 185);  */
     display: flex;
     flex-direction: column;
 
@@ -537,7 +544,7 @@ article p {
 
     .logoHeader {
         width: 20%;
-        border: solid 1px blue;
+        /* border: solid 1px blue; */
         margin: 0%;
         padding: 2%;
     }
