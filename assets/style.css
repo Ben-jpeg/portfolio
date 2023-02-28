@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
 
 /*---------- General ----------*/
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
  body {
     margin: 0%;
     padding: 0%;
@@ -49,30 +55,69 @@ hr {
     /* background-color: black; */
     background-image: url("../img/fond2.jpg");
     color: white;
-    transition: 300ms ease-in-out;
+    /* transition: 200ms ease-in-out; */
+    transition: 0.4s ;
+  }
+
+  .light-mode {
+    /* background-color: black; */
+    background-image: url("../img/fond1.jpg");
+     color: black;
+   /* transition: 200ms ease-in-out; */
+    transition: 0.4s ;
   }
 /*---------- xxxxxxx ----------*/
 
 
 /* header */
 
-/* header {
-    display: flex;
-   
-} */
-
 .logoHeader {
     width: 9%;
     margin: 0%;
     padding: 1%;
-   
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 140%;
-    
 }
+
+/* sticky header xxxxx */
+.stickyHeader {
+    
+    transition: 0.4s;
+    display: flex;
+}
+
+.sticky {
+    transition: 0.9s;
+    background: #bd0de049;
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  /* xxxxxxxxxxxxxxxxx */
+.gifs {
+    text-align: center;
+}
+
+.gifProject {
+    width: 26%;
+}
+
+.gifComp {
+    width: 26%;
+}
+
+.gifPres {
+    width: 23%;
+}
+
 
 .headerMenu {
     display: flex;
@@ -89,14 +134,14 @@ h1 {
 }
 
 .avatar{
-    width: 14%;
+    width: 12%;
 }
 
-.navColor{
-color: rgb(183, 120, 241);
-font-size: 130%;
-font-weight: 500;
+#avatar {
+    visibility: hidden;
 }
+
+
 
 /* article {
     border:solid 3px goldenrod;
@@ -462,69 +507,7 @@ article p {
     padding: 2%
 }
 
-/*  VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV  */
-/*  VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV  */
 
-/* Menu burger de nav */
-.sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: -250px;
-    background-color: #e8e8e8;
-    padding-top: 60px;
-    transition: left 0.9s ease;
-  }
-  
-  /* Sidenav menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.8s;
-  }
-  
-  .sidenav a:hover {
-    color: #111;
-  }
-  
-  .sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Active class */
-  .sidenav.active {
-    right: 0;
-  }
-  
-  /* Close btn */
-  .sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-  }
-  
-  /* Icône burger */
-  .burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-
-
-  .headerMenuBurger {
-    display: none;
-  }
-  
 /* ---------- xxxxxxxxxxxxx ---------- */
 /* ---------- Medi@ Queries ---------- */
   
@@ -544,10 +527,15 @@ article p {
 
     .logoHeader {
         width: 20%;
-        /* border: solid 1px blue; */
         margin: 0%;
         padding: 2%;
     }
+
+    .navColor{
+        color: rgb(183, 120, 241);
+        font-size: 15px;
+        font-weight: 500;
+        }
 
     .logo {
         width: 29%;
@@ -555,11 +543,32 @@ article p {
         padding: 0%;
     }
 
+    .gifProject {
+        width: 49%;
+    }
+    
+    .gifComp {
+        width: 49%;
+    }
+    
+    .gifPres {
+        width: 46%;
+    }
+
+    .avatar{
+        width: 25%;
+    }
+    
+
 /* index */
 
     .divArticle {
         display: contents;
         flex-wrap: wrap;
+    }
+
+    .welc {
+        font-size: 3rem;
     }
 
     .welcSt {

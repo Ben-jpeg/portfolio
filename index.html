@@ -7,13 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;800&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<title>Portfolio Baroini Bendjade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portfolio Baroini Bendjade</title>
 </head>
 
 
@@ -22,42 +21,25 @@
      <!-- header-->
    <header>
        <a href="index.html"> <img class="logoHeader" src="img/logo1.png" alt="logo du site"  id="hdp"> </a>
-       <button onclick="myFunction()">DarkMode</button>
+       <button onclick="darkMode()">Dark</button>
+       <button onclick="lightMode()">Light</button>
        
-
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-<!-- xxxxxxxxxxxxxxMenuBurgerxxxxxxxxxxxxxxxxxx-->
-<section class="headerMenuBurger">
-  <div id="mySidenav" class="sidenav">
-      <a id="closeBtn" href="#" class="close">×</a>
-      <ul class="menuHaut">
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-      </ul>
-    </div>
-
-    <a href="#" id="openBtn">
-      <span class="burger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-    </a>
-</section>
-<!-- xxxxxxxxxxxxxxxMenuBurgerxxxxxxxxxxxxxx-->
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-
    <!-- <div class="" > -->
  
       <h1>Portfolio</h1>
 
 
          <!-- <article class="headerMenu">
-              <a class="navColor" href="#projets"><p>Projets</p></a>
-              <a class="navColor" href="competences.html"><p>Compétences</p></a>
-              <a class="navColor" href="contacts.html"><p>Contacts</p></a>
+              
          </article> -->
+
+         <div class="stickyHeader" id="leHeader">
+              <a class="gifs" href="#avatar">  <img class="gifPres" src="https://media.giphy.com/media/ferRryUNGDXkJKHTh7/giphy.gif" alt="presentation gif"></a>
+              <a class="gifs" href="#compTechs"> <img class="gifComp" src="https://media.giphy.com/media/qPTyrrtmmjbjZtmSJG/giphy.gif" alt="competence gif"></a>
+              <a class="gifs" href="#projets"> <img class="gifProject" src="https://media.giphy.com/media/uy6ITFQK123wPfGnx0/giphy.gif" alt="Projects logo"></a>
+        </div>
+
+
    <!-- </div> -->
 
    </header>
@@ -65,9 +47,10 @@
 
  <!-- section Présentation-->
 
+   <div class="centerHr"> <hr id="avatar" class="souligneTitre" > <br> </div>
 
     <article class="presentation">
-      <img class="avatar" src="img/avatar.png" >
+      <img class="avatar"   src="img/avatar.png" >
        <p class="welc"><b>BAROINI Bendjade</b></br> Développeur Full Stack</p>
        <p class="welcSt">Passionné dans un premier temps par le dessin et l'informatique, j'ai pu m'essayer au développement web fin 2019 en autodidacte. Suite à cela, j'ai alors décidé d'entrepredre une formation afin d'acquérir des connaissances et valider le diplôme Développeur web et web mobile (bac +2). </br> Motivé et flexible, j'ai fait l'expérience du milieu professionnel me permettant d'en apprendre davantage et pratiquer mes conaissances . <br>
        Bonne visite</p>
@@ -113,11 +96,12 @@
      </div>
 
    </section>
-
+   <div class="centerHr"> <hr id="compTechs" class="souligneTitre" ></div>
 
    <!-- section compétences-->
-<section>
-      <h2> Compétences & technologies </h2>
+<section >
+
+      <h2 > Compétences & technologies </h2>
 
       <div class="centerHr"> <hr class="souligneTitre" ></div>
      
@@ -178,14 +162,14 @@
       </div>
 
     </section>
-
+    <div class="centerHr"> <hr id="projets" class="souligneTitre" ></div>
 
  <!-- section Projets Perso-->
 
 
- <section id="projets">
+ <section>
 
- <h2>Mes projets</h2>
+ <h2 >Mes projets</h2>
 
  <div class="centerHr"> <hr class="souligneTitre" ></div>
 

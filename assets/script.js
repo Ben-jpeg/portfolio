@@ -1,25 +1,3 @@
-/* Menu Burger _____________*/ 
-
-var sidenav = document.getElementById("mySidenav");
-var openBtn = document.getElementById("openBtn");
-var closeBtn = document.getElementById("closeBtn");
-
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  sidenav.classList.add("active");
-}
-
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  sidenav.classList.remove("active");
-}
-
-/* Fin _____________*/ 
-
 /* Graph XXXXXXXXXXXXXXXXXXXXXX  */
 
 function makeGraph(container, labels)
@@ -49,7 +27,6 @@ function makeGraph(container, labels)
 }
 
 
-
 window.onload=function () { makeGraph("graph", "labels") }
 
 /*  XXXXXXXXXXXXXXXXXXXXX Fin graph XXXXXXXXXXXXXXXXXXXXXX  */
@@ -57,15 +34,40 @@ window.onload=function () { makeGraph("graph", "labels") }
 
 
 // Dark Mode _____________________________________________X
-function myFunction() {
+function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
 
-// Apparition au défilement _____________________________________________X
+function lightMode() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}
+
+// Scrollreveal - Apparition au défilement ____________________________X
 
 ScrollReveal().reveal('.welc', { delay: 300 });
 ScrollReveal().reveal('.welcSt', { delay: 300 });
 ScrollReveal().reveal('.container', { delay: 300 });
 ScrollReveal().reveal('.col', { delay: 300 });
 ScrollReveal().reveal('.divArticle', { delay: 300 });
+
+// Sticky Header _______________________________________________________X
+
+// quand on scroll la page, cela va exéctuer 'stickyFingers'
+window.onscroll = function() {stickyFingers()};
+
+// chopper dans le html 'leHeader'
+var header = document.getElementById("leHeader");
+
+// avoir la position offset de la variable header
+var sticky = header.offsetTop;
+
+// ajouter la class 'sticky' quand la limite du scroll est atteinte + l'enlève si quand on enleve la position scrollé du debut. 
+function stickyFingers() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
