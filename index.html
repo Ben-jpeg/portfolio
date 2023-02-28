@@ -11,8 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+  
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfolio Baroini Bendjade</title>
+    <link rel="icon" type="image/x-icon" href="img/geass.png">
 </head>
 
 
@@ -20,34 +23,29 @@
 <body>
      <!-- header-->
    <header>
-       <a href="index.html"> <img class="logoHeader" src="img/logo1.png" alt="logo du site"  id="hdp"> </a>
-       <button onclick="darkMode()">Dark</button>
-       <button onclick="lightMode()">Light</button>
+
+       <div class="entete flex">
+
+         
+             <a href="index.html"><img class="logoHeader" src="img/geass.png" alt="logo du site"  id="hdp"></a>
+             <h1 class="h1modifs">Portfolio</h1>
+           <button class="button" onclick="darkMode()"><span>Dark Mode </span></button>
+      </div>
        
-   <!-- <div class="" > -->
  
-      <h1>Portfolio</h1>
 
-
-         <!-- <article class="headerMenu">
-              
-         </article> -->
-
-         <div class="stickyHeader" id="leHeader">
-              <a class="gifs" href="#avatar">  <img class="gifPres" src="https://media.giphy.com/media/ferRryUNGDXkJKHTh7/giphy.gif" alt="presentation gif"></a>
-              <a class="gifs" href="#compTechs"> <img class="gifComp" src="https://media.giphy.com/media/qPTyrrtmmjbjZtmSJG/giphy.gif" alt="competence gif"></a>
-              <a class="gifs" href="#projets"> <img class="gifProject" src="https://media.giphy.com/media/uy6ITFQK123wPfGnx0/giphy.gif" alt="Projects logo"></a>
-        </div>
-
-
-   <!-- </div> -->
+           <div class="stickyHeader flex" id="leHeader">
+                <a class="gifs" href="#avatar">  <img class="gifPres" src="https://media.giphy.com/media/ferRryUNGDXkJKHTh7/giphy.gif" alt="presentation gif"></a>
+                <a class="gifs" href="#compTechs"> <img class="gifComp" src="https://media.giphy.com/media/qPTyrrtmmjbjZtmSJG/giphy.gif" alt="competence gif"></a>
+                <a class="gifs" href="#projets"> <img class="gifProject" src="https://media.giphy.com/media/uy6ITFQK123wPfGnx0/giphy.gif" alt="projects gif"></a>
+          </div>
 
    </header>
    <!-- fin header-->
 
  <!-- section Présentation-->
 
-   <div class="centerHr"> <hr id="avatar" class="souligneTitre" > <br> </div>
+   <div class="centerHr flex"> <hr id="avatar" class="souligneTitre" > <br> </div>
 
     <article class="presentation">
       <img class="avatar"   src="img/avatar.png" >
@@ -107,7 +105,7 @@
      
 
        <div class="container text-center flex jcc">
-          <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-4 test flex jcc">
+          <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-4 centrage flex jcc">
 
             <div class="col box" id="box3">
               <div class="p-3"><img class="logoTechnos" src="img/html.png" alt="logo html"> <p>HTML</p></div>
@@ -173,7 +171,7 @@
 
  <div class="centerHr"> <hr class="souligneTitre" ></div>
 
-    <div class="divArticle" >
+    <div class="divArticle flex" >
         <article>  
                  <h2> UTSF Association</h2>
                      <a href="https://ben-jpeg.github.io/UTSF_v2/" target="_blank"> <img class="illustrationProjets" src="img/utsf.png" alt="utsf illustration"> </a>
@@ -257,26 +255,26 @@
 
   <section>
   
-      <article class="articleAgile">
+      <article class="articleAgile flex">
         <img src="img/agile logo.png" alt="img agiles" class="logosComp">
         <p class="titresCompetences">Méthode de travail Agiles & Scrum </p>
      </article>
 
 
-     <article class="articleDocker">
+     <article class="articleDocker flex">
         <p class="titresCompetences">Autres environnements expérimentés</p>
         <img src="img/docker logo.png" alt="img docker" class="logosComp">
         <img src="img/linux.png" alt="img linux" class="logosComp">
      </article>
 
 
-     <article class="articleOpquast">
+     <article class="articleOpquast flex">
         <img src="img/opquast logo.png" alt="img opquast" class="logosComp">
         <p class="titresCompetences">Certification bonne pratiques du web Opquast </br> <a class="opquast" href="https://www.opquast.com/">visiter</a></p>
      </article>
 
 
-    <article class="articleOpenoffice">
+    <article class="articleOpenoffice flex">
         <p class="titresCompetences"> Pack Open Office </br> Excel, Word, Powerpoint, Notes</p>
         <img src="img/pack office logo.png" alt="img pack openoffice" class="logosComp">  
      </article>
@@ -287,11 +285,17 @@
 
 
     <footer>
-       <a href="#hdp"> <img class="hdp" src="img/fleche.png" alt="haut de page"> </a> 
-   </footer>
+          <!-- <button onclick="topFunction()" id="myBtn" title="">↥↥↥</button>  -->
+          
+          <div id="scrollUp">
+            <a href="#top"><img src="img/up2.png" alt="Retourner en haut" /></a>
+        </div>
+
+    </footer>
 
   <script type="text/javascript" src="assets/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 
 </body>
 </html>
